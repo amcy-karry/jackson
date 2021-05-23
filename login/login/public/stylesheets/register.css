@@ -1,0 +1,52 @@
+form{
+    display: table;
+    /* position: relative; */
+    border: 1px solid lavenderblush;
+    height: 527px;
+    width: 374px;
+    margin: 37px 443px;
+    background-color: #fff0f58a;
+    border-radius: 40px;
+}
+.d1{
+    padding-left: 52px;
+    padding-top: 40px;
+}
+.d2{
+    padding-left: 68px;
+    padding-top: 10px;
+}
+.d3{
+    padding-left: 36px;
+    padding-top: 13px;
+}
+.d4{
+    padding-left: 36px;
+    padding-top: 27px;
+}
+.d5{
+    padding-left: 68px;
+    padding-top: 27px;
+}
+.d6{
+    padding-left: 69px;
+    padding-top: 27px;
+}
+.d7{
+    padding-left: 38px;
+    padding-top: 27px;
+}
+.d8{
+    padding-left: 71px;
+    padding-top: 27px;
+}
+.d9{
+    padding-left: 71px;
+    padding-top: 27px;
+}
+.i1{
+    margin: 18px 165px;
+}
+body{
+    background-image: url(dongman.jpg);
+}

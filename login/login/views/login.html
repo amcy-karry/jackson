@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/login.css">
+    <script src="javascripts/jquery.min.js"></script>
+    <script src="javascripts/ajax.js"></script>
+</head>
+<body>
+    
+        <div class="c1">
+            <div class="d1">
+                <label>用户名：</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <br>
+            <div class="d2">
+                <label >密码：</label>
+                <input type="password" name="pass" id="pass">
+            </div>
+            <br>
+            <div class="d3">
+                <a class="a2" href="./onepage"><input type="button" value="登录" id="inter"></a>
+            </div>
+            <a class="a1" href="./register"  style="text-decoration: none;">立即注册？</a>
+        </div>
+    
+    <script>
+        $('#inter').click(function () {
+            $.ajax({
+                type:"post",
+                url:"/login",
+                data:{"name":$("#name").val(),"password":$("#pass").val()},
+                success:function(data){
+                    console.log(data.status)
+                    if(data.status==1){
+                        alert("success!!!");
+                        window.location.href="/onepage";
+                    }else{
+                        alert("fail...");
+                    }
+                }
+            })
+            
+        })
+    </script>
+</body>
+</html>

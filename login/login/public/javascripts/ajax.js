@@ -1,0 +1,59 @@
+$("#Home").click(function(){
+	$.ajax({
+		type:"post",
+		url:"/onepage",
+		success:function(){
+			window.location.href="/onepage1"
+		}
+	})
+})
+
+$("#Works").click(function(){
+	$.ajax({
+		type:"post",
+		url:"/onepage",
+		success:function(){
+			window.location.href="/work"
+		}
+	})
+})
+
+$("#Forum").click(function(){
+	$.ajax({
+		type:"post",
+		url:"/onepage",
+		success:function(){
+			window.location.href="/forum"
+		}
+	})
+})
+
+$("#Shop").click(function(){
+	$.ajax({
+		type:"post",
+		url:"/onepage",
+		success:function(){
+			window.location.href="/shop"
+		}
+	})
+})
+
+$("#Services").click(function(){
+	$.ajax({
+		type:"post",
+		url:"/onepage",
+		success:function(){
+			window.location.href="/onepage"
+		}
+	})
+})
+
+$("#Contact").click(function(){
+	$.ajax({
+		type:"post",
+		url:"/onepage",
+		success:function(){
+			window.location.href="/contact"
+		}
+	})
+})

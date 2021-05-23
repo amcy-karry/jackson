@@ -1,0 +1,17 @@
+.intro img{
+    width: 318px;
+}
+.intro span{
+    position: absolute;
+    width: 727px;
+    left: 416px;
+}
+.c1{
+    background-color: cornflowerblue;
+}
+.c2{
+    background-color: darkcyan;
+}
+.c3{
+    background-color: darkred;
+}
